@@ -8,11 +8,11 @@ import FAQ from "./components/FAQ/FAQ";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Footer from "./components/Footer/Footer";
 
-import "./App.css";
+import css from "./app.module.css";
 
 function App() {
   return (
-    <div className="App">
+    <div className={css.app}>
       <Header />
       <BurgerMenu />
       <main>
