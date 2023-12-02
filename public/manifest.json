@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Ecosolution",
+  "name": "Ecosolution",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,14 +8,14 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "logo1x.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "269x40"
     },
     {
-      "src": "logo512.png",
+      "src": "logo2x.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "538x80"
     }
   ],
   "start_url": ".",
