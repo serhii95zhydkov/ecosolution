@@ -9,7 +9,7 @@ import Questions from "./Questions";
 
 import css from "./faq.module.css";
 
-const Faq = () => {
+const FAQ = () => {
   const isSmallScreen = useMediaQuery({ maxWidth: 768 });
 
   const [openIndex, setOpenIndex] = useState(1);
@@ -140,4 +140,4 @@ const Faq = () => {
   );
 };
 
-export default Faq;
+export default FAQ;
