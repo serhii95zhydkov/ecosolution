@@ -3,7 +3,7 @@ import Main from "./components/Main/Main";
 import About from "./components/About/About";
 import Electricity from "./components/Electricity/Electricity";
 import Cases from "./components/Cases/Cases";
-import Faq from "./components/Faq/Faq";
+import FAQ from "./components/FAQ/FAQ";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Footer from "./components/Footer/Footer";
 
@@ -18,7 +18,7 @@ function App() {
         <About />
         <Electricity />
         <Cases />
-        <Faq />
+        <FAQ />
         <ContactUs />
       </main>
       <Footer />
