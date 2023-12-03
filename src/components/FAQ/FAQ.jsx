@@ -5,7 +5,7 @@ import { useMediaQuery } from "react-responsive";
 import Container from "../../shared/Container/Container";
 import Title from "../../shared/Title/Title";
 import Button from "../../shared/Buttons/Button";
-import Questions from "./Questions";
+import Questions from "../../shared/Questions/Questions";
 
 import css from "./faq.module.css";
 

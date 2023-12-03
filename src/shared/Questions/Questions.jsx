@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-import css from "./faq.module.css";
+import css from "./questions.module.css";
 
 const Questions = ({ title, text, isOpen, onClick }) => {
   const styleTitle = isOpen
