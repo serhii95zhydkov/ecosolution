@@ -1,55 +1,74 @@
+import Container from "../../shared/Container/Container";
+import Title from "../../shared/Title/Title";
+import Form from "./Form/Form";
+
+import { ReactComponent as Facebook } from "../../images/icons/facebook.svg";
+import { ReactComponent as Instagram } from "../../images/icons/instagram.svg";
+import { ReactComponent as Call } from "../../images/icons/call.svg";
+import { ReactComponent as Sms } from "../../images/icons/sms.svg";
+import { ReactComponent as Map } from "../../images/icons/map.svg";
+
+import css from "./contactUs.module.css";
+
 const ContactUs = () => {
   return (
-    <section>
-      <div>
-        <h2>Contact us</h2>
-        <ul>
-          <li>
-            <span>Phone:</span>
-            <a href="tel:+380981234567">38 (098) 12 34 567</a>
-            <a href="tel:+380981234567">38 (093) 12 34 567</a>
-          </li>
-          <li>
-            <span>E-mail:</span>
-            <a href="mailto:office@ecosolution.com">office@ecosolution.com</a>
-          </li>
-          <li>
-            <span>Address:</span>
-            <a
-              href="https://maps.app.goo.gl/ch5Zc6Nrzai3HErQ6"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-            >
-              79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
-            </a>
-          </li>
-          <li>
-            <span>Social Networks:</span>
-            <a href="https://www.facebook.com/">Facebook</a>
-            <a href="https://www.instagram.com/">Instagram</a>
-          </li>
-        </ul>
-        <form>
-          <label>
-            <span>Full Name:</span>
-            <input name="Full Name" placeholder="John Rosie" />
-          </label>
-          <label>
-            <span>E-mail:</span>
-            <input name="E-mail" placeholder="johnrosie@gmail.com" />
-          </label>
-          <label>
-            <span>Phone:</span>
-            <input name="Phone" placeholder="380961234567" />
-          </label>
-          <label>
-            <span>Message:</span>
-            <textarea name="Message" placeholder="My message" />
-          </label>
-          <button>Send</button>
-        </form>
+    <Container id="contacts">
+      <div className={css.container}>
+        <div className={css.title}>
+          <Title text="Contact us" />
+        </div>
+
+        <div className={css.contacts__container}>
+          <div className={css.contacts}>
+            <div className={css.phone}>
+              <p className={css.contacts__title}>Phone:</p>
+              <a href="tel:+380981234567" className={css.phone__link}>
+                <Call />
+                <span className={css.span}>+38 (098) 12 34 567</span>
+              </a>
+              <a href="tel:+380981234567" className={css.phone__link}>
+                <Call />
+                <span className={css.span}>+38 (093) 12 34 567</span>
+              </a>
+            </div>
+            <div className={css.mail}>
+              <p className={css.contacts__title}>E-mail:</p>
+              <a
+                href="mailto:office@ecosolution.com"
+                className={css.mail__link}
+              >
+                <Sms />
+                <span className={css.span}>office@ecosolution.com</span>
+              </a>
+            </div>
+            <div className={css.adress}>
+              <p className={css.contacts__title}>Address:</p>
+              <a
+                href="https://maps.app.goo.gl/AyT3DNC4Cco23Xoy7"
+                className={css.adress__link}
+              >
+                <Map />
+                <span className={css.span}>
+                  79005, Ukraine, Lviv, street. Shota Rustaveli, 7
+                </span>
+              </a>
+            </div>
+            <div className={css.social}>
+              <p className={css.contacts__title}>Social Networks:</p>
+              <a href="./" className={css.social__link}>
+                <Facebook />
+              </a>
+              <a href="./" className={css.social__link}>
+                <Instagram />
+              </a>
+            </div>
+          </div>
+          <div className={css.form}>
+            <Form />
+          </div>
+        </div>
       </div>
-    </section>
+    </Container>
   );
 };
 
