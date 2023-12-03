@@ -17,7 +17,7 @@ const Footer = () => {
 
   return (
     <Container>
-      <div className={css.container}>
+      <footer className={css.container}>
         <div className={css.logo__container}>
           <Logo />
           {!isSmallScreen && (
@@ -83,7 +83,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-      </div>
+      </footer>
     </Container>
   );
 };
