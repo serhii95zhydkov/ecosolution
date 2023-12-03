@@ -52,14 +52,14 @@ const Header = () => {
     >
       <div className={css.header}>
         <Logo />
-        <div className={css.nav}>
+        <header className={css.nav}>
           <div className={css.burger} onClick={handleClickBurger}>
             <Burger />
           </div>
           <div className={css.button} onClick={handleClick}>
             <Button text="Get in touch" />
           </div>
-        </div>
+        </header>
         <>
           <div
             className={
